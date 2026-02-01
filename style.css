@@ -1,0 +1,126 @@
+:root {
+    /* Cores do Tema Claro (Padrão) */
+    --bg-color: #f0f2f5;
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --card-hover: #e4e6e9;
+    --primary-color: #007bff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Cores do Tema Escuro */
+body.dark-mode {
+    --bg-color: #121214;
+    --text-color: #e1e1e6;
+    --card-bg: #202024;
+    --card-hover: #29292e;
+    --primary-color: #8257e6;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Largura típica de mobile */
+    text-align: center;
+    position: relative;
+}
+
+/* Avatar com borda degradê */
+.avatar img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid var(--card-bg);
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.profile p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.profile .bio {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 0.85rem;
+}
+
+/* Estilo dos Botões (Links) */
+.links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--card-bg);
+    padding: 16px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    box-shadow: var(--shadow);
+    border: 1px solid transparent;
+}
+
+.link-card:hover {
+    background: var(--card-hover);
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+.link-card i:first-child {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.share-icon {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+/* Botão de Tema */
+.theme-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
