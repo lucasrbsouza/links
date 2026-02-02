@@ -1,69 +1,86 @@
-Personal Links Hub
+# Personal Links Hub
 
-Um agregador de links centralizado, desenvolvido com foco em performance e facilidade de manutenção. O projeto utiliza um arquivo JSON para gerenciar o conteúdo, separando os dados da interface.
+Um agregador de links centralizado, desenvolvido com foco em **performance**, **simplicidade** e **facilidade de manutenção**.
+O projeto utiliza um arquivo JSON para gerenciar o conteúdo, promovendo a separação clara entre **dados** e **interface**.
 
-Demo: Acesse a demonstração aqui
+🔗 **Demo:** lucasrbsouza.github.io/links/
 
-🚀 Tecnologias
+---
 
-HTML5
+## 🚀 Tecnologias
 
-CSS3 (Variáveis e Flexbox)
+* **HTML5**
+* **CSS3** (variáveis CSS e Flexbox)
+* **JavaScript** (Fetch API)
+* **Phosphor Icons**
 
-JavaScript (Fetch API)
+---
 
-Phosphor Icons
+## ✨ Funcionalidades
 
-✨ Funcionalidades
+* **Tema Claro / Escuro**
+  Alternância de tema com persistência da preferência do usuário.
 
-Tema Claro/Escuro: Alternância de tema com persistência da preferência do usuário.
+* **Dados dinâmicos**
+  Os links são carregados externamente via `links.json`, permitindo atualizações sem necessidade de alterar o HTML.
 
-Dados Dinâmicos: Os links são carregados externamente via links.json, facilitando a atualização sem necessidade de mexer no HTML.
+* **Responsividade**
+  Layout totalmente adaptável para dispositivos móveis e desktop.
 
-Responsividade: Layout adaptável para dispositivos móveis e desktop.
+* **Data automática**
+  Atualização automática do ano no rodapé da página.
 
-Data Automática: Atualização automática do ano no rodapé.
+---
 
-📂 Estrutura
+## 📂 Estrutura do Projeto
 
-├── index.html    # Estrutura principal
-
-├── style.css     # Estilos e temas
-
+```text
+├── index.html    # Estrutura principal da aplicação
+├── style.css     # Estilos globais e temas
 ├── script.js     # Lógica da aplicação
-
 └── links.json    # Configuração dos links
+```
 
+---
 
-🛠️ Como Configurar
+## 🛠️ Como Configurar
 
-1. Adicionar/Remover Links
+### 1. Adicionar ou remover links
 
-Edite o arquivo links.json. O formato deve seguir este padrão:
+Edite o arquivo `links.json`. Cada item deve seguir o formato abaixo:
 
+```json
 {
-    "title": "Título do Link",
-    "url": "[https://exemplo.com](https://exemplo.com)",
-    "icon": "ph-globe" 
+  "title": "Título do Link",
+  "url": "https://exemplo.com",
+  "icon": "ph-globe"
 }
+```
 
+📌 Os ícones utilizam a biblioteca **Phosphor Icons**.
 
-Os ícones utilizam a biblioteca Phosphor Icons.
+---
 
-2. Personalizar Perfil
+### 2. Personalizar perfil
 
-No arquivo index.html, altere as informações dentro da tag <header> (imagem, nome e biografia).
+No arquivo `index.html`, altere as informações dentro da tag `<header>`:
 
-💻 Executando Localmente
+* Imagem de perfil
+* Nome
+* Biografia
 
-Para carregar o arquivo links.json corretamente (evitando bloqueio de CORS), use a extensão Live Server do VS Code:
+---
 
-Abra a pasta do projeto no VS Code.
+## 💻 Executando Localmente
 
-Instale a extensão Live Server (se ainda não tiver).
+Para garantir o carregamento correto do arquivo `links.json` (evitando bloqueios de CORS), utilize a extensão **Live Server** do VS Code:
 
-Clique no botão "Go Live" no canto inferior direito do editor.
+1. Abra a pasta do projeto no VS Code.
+2. Instale a extensão **Live Server** (caso ainda não possua).
+3. Clique no botão **Go Live** no canto inferior direito do editor.
 
-📄 Licença
+---
 
-Este projeto está sob a licença MIT.
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License**.

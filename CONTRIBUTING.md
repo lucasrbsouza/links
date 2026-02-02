@@ -1,52 +1,67 @@
-Guia de Contribuição
+# Guia de Contribuição
 
-Ficamos felizes com o seu interesse em contribuir para o Personal Links Hub! Este documento fornece diretrizes para quem deseja usar este projeto como base ou ajudar a melhorar o código.
+Ficamos felizes com o seu interesse em contribuir para o **Personal Links Hub**! 🎉
+Este documento apresenta diretrizes para quem deseja usar este projeto como base ou colaborar com melhorias no código.
 
-🚀 Criando o seu próprio Linktree
+---
 
-Se o seu objetivo é apenas ter o seu próprio site de links:
+## 🚀 Criando o seu próprio Linktree
 
-Faça um Fork: Clique no botão "Fork" no canto superior direito da página do repositório.
+Se o seu objetivo é apenas criar o seu próprio site de links utilizando este projeto:
 
-Edite o JSON: No seu repositório, altere o arquivo links.json com os seus dados.
+1. **Faça um fork**
+   Clique no botão **Fork** no canto superior direito da página do repositório.
 
-Personalize: Altere o index.html com a sua foto e bio.
+2. **Edite o arquivo JSON**
+   No seu repositório, personalize o arquivo `links.json` com os seus próprios dados.
 
-Habilite o Pages: Vá em Settings > Pages e ative o site.
+3. **Personalize o layout**
+   Edite o arquivo `index.html` para alterar sua foto, bio e demais informações visuais.
 
-Você tem total liberdade para modificar o layout, cores e estrutura como preferir!
+4. **Habilite o GitHub Pages**
+   Acesse **Settings > Pages** e ative a publicação do site.
 
-🛠️ Contribuindo com o Código
+✨ Você tem total liberdade para modificar layout, cores e estrutura conforme a sua necessidade.
 
-Se você encontrou um bug, tem uma ideia de nova funcionalidade ou quer melhorar a documentação deste repositório base:
+---
 
-Fluxo de Trabalho
+## 🛠️ Contribuindo com o Código
 
-Faça um Fork deste repositório.
+Se você encontrou um bug, tem uma sugestão de funcionalidade ou deseja melhorar a documentação do repositório base, siga as orientações abaixo.
 
-Crie uma Branch para a sua modificação:
+### Fluxo de trabalho
 
-git checkout -b feature/MinhaMelhoria
+1. **Faça um fork** deste repositório.
 
+2. **Crie uma branch** para a sua modificação:
 
-Faça suas alterações e confirme os commits:
+   ```bash
+   git checkout -b feature/minha-melhoria
+   ```
 
-git commit -m "feat: Adiciona nova funcionalidade de..."
+3. **Implemente as alterações** e faça commits claros e descritivos:
 
+   ```bash
+   git commit -m "feat: adiciona nova funcionalidade de ..."
+   ```
 
-Envie para o seu Fork:
+4. **Envie as alterações** para o seu fork:
 
-git push origin feature/MinhaMelhoria
+   ```bash
+   git push origin feature/minha-melhoria
+   ```
 
+5. **Abra um Pull Request (PR)** neste repositório descrevendo detalhadamente o que foi alterado.
 
-Abra um Pull Request (PR) aqui no repositório original descrevendo o que foi feito.
+---
 
-Padrões de Código
+### Padrões de código
 
-Mantenha a simplicidade (KISS). Evite adicionar frameworks pesados sem necessidade.
+* Mantenha a simplicidade (**KISS – Keep It Simple, Stupid**).
+* Evite adicionar frameworks ou dependências pesadas sem necessidade clara.
+* Use indentação consistente (2 ou 4 espaços, conforme o padrão do arquivo).
+* Ao alterar o CSS, valide se os modos **claro** e **escuro** continuam funcionando corretamente.
 
-Use indentação padrão (4 espaços ou 2 espaços, consistente com o arquivo).
+---
 
-Se alterar o CSS, verifique se o tema escuro/claro continua funcionando corretamente.
-
-Obrigado por contribuir!
+🙏 Obrigado por contribuir e ajudar a melhorar este projeto!
