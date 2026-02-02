@@ -10,6 +10,11 @@
         "icon": "ph-linkedin-logo"
     },
     {
+        "title": "Email",
+        "url": "mailto:eng.lucassouzas@gmail.com",
+        "icon": "ph-envelope-simple"
+    },
+    {
         "title": "TikTok",
         "url": "https://www.tiktok.com/@lszns0uza",
         "icon": "ph-tiktok-logo"
